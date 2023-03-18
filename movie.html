@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>movie</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
             rel="stylesheet"
@@ -124,55 +124,108 @@
     </div>
 </header>
 
-        <div class="baner">
-    <div class="slider">
-        
-        <div class="slider__vew-port">
-            <ul class="slider__line">
-                <li class="slider__item item item-0"><a href="#"></a></li>
-                <li class="slider__item item item-1"><a href="#"></a></li>
-                <li class="slider__item item item-2"><a href="#"></a></li>
-            </ul>
+        <div class="container">
+    <div class="desc">
+        <div class="desc__wrap">
+            <div class="desc__slider">
+                <img class="desc__img-big" src="./img/img-film-0.jpg" alt="" />
+                <div class="desc__line">
+                    <img
+                        class="desc__img-min"
+                        src="./img/img-film-0.jpg"
+                        alt=""
+                    />
+                    <img
+                        class="desc__img-min"
+                        src="./img/img-film-0.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+
+            <div class="desc__info">
+                <div class="desc_wrp-res-rat">
+                    <div class="desc__resolution">
+                        <p class="desc__resolution-num">1080</p>
+                        <p class="desc__resolution-pix">p</p>
+                    </div>
+
+                    <div class="desc__rating">
+                        <p class="desc__rating-num">5.5</p>
+                    </div>
+                </div>
+
+                <p class="desc__top-week">The Best Movies Week</p>
+                <p class="desc__name">Кот в Сапогах</p>
+                <div class="desc__wrap-time">
+                    <span class="desc__year">2023</span>
+                    <span class="desc__time">1h 20m</span>
+                </div>
+                <div class="desc__wrap-studio">
+                    <span class="desc__studio">STUDIO:</span>
+                    <div class="desc__studio-btn">MGM / UA</div>
+                </div>
+
+                <span class="desc__cast">CAST:</span>
+                <samp class="desc__cast-text"
+                    >Robert De Niro, Stellan Skarsgard, Natascha McElhone, Jean
+                    Reno, Jonathan Pryce, Sean Bean
+                </samp>
+                <div class="desc__wrap-dow">
+                    <button class="desc__btn-dow">
+                        <span class="desc__btn-txt">Download</span>
+                    </button>
+                    <button class="desc__how-dow">HOW DOWNLOAD?</button>
+                    <button class="desc__dmca">DMCA INFO</button>
+                </div>
+            </div>
+
+            <!-- parts-dow -->
+
+            <section class="parts" hidden>
+                <button class="parts__close">
+                    <img src="../../img/cross-y.svg" alt="" />
+                </button>
+                <ul class="parts__list">
+                    <li class="parts__item">Part 1</li>
+                    <li class="parts__item">Part 2</li>
+                    <li class="parts__item">Part 3</li>
+                    <li class="parts__item">Part 4</li>
+                    <li class="parts__item">Part 5</li>
+                    <li class="parts__item">Part 6</li>
+                    <li class="parts__item">Part 7</li>
+                    <li class="parts__item">Part 8</li>
+                    <li class="parts__item">Part 9</li>
+                    <li class="parts__item">Part 10</li>
+                </ul>
+                <p class="parts__attention">
+                    To watch the movie, you need to download all parts of the
+                    archive
+                </p>
+            </section>
+
+            <!-- //parts-dow -->
         </div>
-        
-        <button class="slider__btn btn-prev">
-            <svg class="svg-arr-prev"
-                width="16"
-                height="26"
-                viewBox="0 0 16 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M5.36203 13.0456C5.47048 13.1321 5.58669 13.2112 5.68626 13.3062C8.94537 16.4155 12.2021 19.527 15.4617 22.6359C15.8206 22.9782 16.0154 23.374 15.9676 23.8647C15.9363 24.1852 15.8021 24.4638 15.5696 24.6937C15.2619 24.998 14.9581 25.3077 14.6292 25.5903C13.955 26.1696 13.1231 26.1298 12.4635 25.501C10.6784 23.7992 8.89505 22.0958 7.11115 20.393C4.91364 18.2953 2.71765 16.1962 0.517525 14.101C0.137913 13.7395 -0.0518076 13.3212 0.0122615 12.8063C0.0585743 12.4341 0.263132 12.1473 0.533158 11.8899C2.2476 10.2557 3.9601 8.61961 5.67327 6.9842C7.93389 4.82619 10.195 2.66871 12.4545 0.509615C12.7522 0.225128 13.0913 0.0272615 13.5219 0.00293007C13.9112 -0.0190669 14.2677 0.0821494 14.5516 0.333265C14.9323 0.67003 15.311 1.01339 15.6504 1.38709C16.1221 1.90633 16.1181 2.67838 15.6284 3.18425C15.0354 3.79684 14.4045 4.37611 13.7865 4.96642C11.0424 7.5872 8.2973 10.207 5.55093 12.8255C5.49723 12.8767 5.42358 12.9089 5.35924 12.9499C5.36017 12.9818 5.3611 13.0137 5.36203 13.0456Z"
-                    fill="white"
-                />
-            </svg>
-        </button>
-        <button class="slider__btn btn-next">
-            <svg class="svg-arr-next"
-                width="16"
-                height="26"
-                viewBox="0 0 16 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M5.36203 13.0456C5.47048 13.1321 5.58669 13.2112 5.68626 13.3062C8.94537 16.4155 12.2021 19.527 15.4617 22.6359C15.8206 22.9782 16.0154 23.374 15.9676 23.8647C15.9363 24.1852 15.8021 24.4638 15.5696 24.6937C15.2619 24.998 14.9581 25.3077 14.6292 25.5903C13.955 26.1696 13.1231 26.1298 12.4635 25.501C10.6784 23.7992 8.89505 22.0958 7.11115 20.393C4.91364 18.2953 2.71765 16.1962 0.517525 14.101C0.137913 13.7395 -0.0518076 13.3212 0.0122615 12.8063C0.0585743 12.4341 0.263132 12.1473 0.533158 11.8899C2.2476 10.2557 3.9601 8.61961 5.67327 6.9842C7.93389 4.82619 10.195 2.66871 12.4545 0.509615C12.7522 0.225128 13.0913 0.0272615 13.5219 0.00293007C13.9112 -0.0190669 14.2677 0.0821494 14.5516 0.333265C14.9323 0.67003 15.311 1.01339 15.6504 1.38709C16.1221 1.90633 16.1181 2.67838 15.6284 3.18425C15.0354 3.79684 14.4045 4.37611 13.7865 4.96642C11.0424 7.5872 8.2973 10.207 5.55093 12.8255C5.49723 12.8767 5.42358 12.9089 5.35924 12.9499C5.36017 12.9818 5.3611 13.0137 5.36203 13.0456Z"
-                    fill="white"
-                />
-            </svg>
-        </button>
-        <!-- dots -->
-        <div class="dots">
+
+        <div class="desc__block">
+            <p class="desc__title">DESCRIPTION</p>
+            <p class="desc__text">
+                The Cold War may be over, but a new world order keeps a group of
+                covert mercenaries employed by the highest bidder. These
+                operatives, known as Ronin, are assembled in France by a
+                mysterious client for a seemingly routine mission: steal a
+                top-secret briefcase. But the simple task soon proves explosive
+                as other underworld organizations vie for the same prize....
+            </p>
         </div>
-        <!-- /dots -->
     </div>
 </div>
 
-        <div class="bestsellers">
-    <h2 class="bestsellers__title">The Best Movies Week</h2>    
-    <h1 class="bestsellers__subtitle">BESTSELLERS</h1>
+<!-- The Best Movies Week -->
+
+<section class="best">
+    <h2 class="bestsellers__title">The Best Movies Week</h2>
+    <h1 class="bestsellers__subtitle">More films from MGM / UA</h1>
     <div class="rec-wrap">
     <div class="vew">
         <div class="line"></div>
@@ -210,79 +263,10 @@
         </button>
 </div>
 
-</div>
+</section>
 
-        <div class="newest">
-    <div class="newest__top">
-        <h3 class="newest__title">NEWEST</h3>
-        <p class="newest__subtitle">The Best Movies Week</p>
-        <div class="newest__wrap-btn">
-            <button class="newest__btn">
-                <span class="newest__btn-text">Sort By</span>
-
-                <svg
-                    class="newest__btn-arr"
-                    width="12"
-                    height="8"
-                    viewBox="0 0 12 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M6.02105 5.31898C6.06098 5.26476 6.09748 5.20665 6.14132 5.15687C7.57638 3.52732 9.01246 1.89893 10.4473 0.269155C10.6053 0.0896763 10.788 -0.00772024 11.0145 0.0162222C11.1624 0.0318591 11.291 0.0989599 11.3971 0.215191C11.5375 0.369036 11.6805 0.520955 11.8109 0.685378C12.0783 1.02248 12.0599 1.43843 11.7697 1.76825C10.9843 2.6608 10.1981 3.55247 9.41214 4.44443C8.44399 5.54318 7.47516 6.64118 6.50816 7.74124C6.34131 7.93104 6.14826 8.0259 5.9106 7.99387C5.73881 7.97071 5.60642 7.86843 5.48763 7.73342C4.73338 6.8762 3.97828 6.01995 3.22347 5.16336C2.22747 4.03306 1.23171 2.90248 0.235207 1.77275C0.103905 1.62389 0.0125808 1.45434 0.0013513 1.23904C-0.00880151 1.0444 0.0379142 0.866143 0.153813 0.724202C0.309244 0.53385 0.467717 0.344525 0.640194 0.174793C0.879845 -0.0610429 1.23617 -0.0590629 1.46965 0.185783C1.75239 0.48228 2.01974 0.797741 2.29219 1.10677C3.50179 2.47879 4.7109 3.85135 5.91947 5.22453C5.94311 5.25139 5.95795 5.28821 5.9769 5.32038C5.99162 5.31991 6.00633 5.31945 6.02105 5.31898Z"
-                        fill="white"
-                    />
-                </svg>
-            </button>
-            <ul class="newest__drop-list hidden">
-                <li class="newest__drop-item sort-date">Date</li>
-                <li class="newest__drop-item sort-name">Name</li>
-                <li class="newest__drop-item sort-rating">Rating</li>
-            </ul>
-        </div>
-    </div>
-    <div class="newest__content"></div>
-    <div class="newest__pagination">
-        <button class="newest__pag-btn pag-btn-lef">
-            <svg
-                width="13"
-                height="20"
-                viewBox="0 0 13 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M4.35665 9.96491C4.44477 9.89837 4.53919 9.83753 4.62008 9.76446C7.26811 7.37271 9.91423 4.97923 12.5626 2.5878C12.8543 2.32445 13.0125 2.02 12.9736 1.64251C12.9482 1.39596 12.8392 1.18166 12.6503 1.00482C12.4003 0.770754 12.1534 0.532555 11.8863 0.315178C11.3385 -0.13049 10.6625 -0.0998701 10.1266 0.383856C8.6762 1.69289 7.22723 3.00319 5.77781 4.31309C3.99233 5.92669 2.20809 7.5414 0.42049 9.15307C0.112056 9.43115 -0.0420923 9.7529 0.00996304 10.149C0.0475922 10.4353 0.213796 10.656 0.433191 10.854C1.82617 12.111 3.21758 13.3695 4.60953 14.6275C6.44628 16.2875 8.28347 17.9471 10.1193 19.608C10.3612 19.8268 10.6367 19.979 10.9866 19.9977C11.3028 20.0147 11.5925 19.9368 11.8232 19.7436C12.1325 19.4846 12.4401 19.2205 12.716 18.933C13.0992 18.5336 13.096 17.9397 12.6981 17.5506C12.2163 17.0794 11.7037 16.6338 11.2015 16.1797C8.97197 14.1637 6.74155 12.1485 4.51013 10.1342C4.4665 10.0948 4.40666 10.0701 4.35438 10.0385C4.35514 10.014 4.3559 9.98944 4.35665 9.96491Z"
-                    fill="white"
-                    fill-opacity="0.4"
-                />
-            </svg>
-        </button>
-
-        <div class="newest__pag-num num-0">1</div>
-        <div class="newest__pag-num num-1 newest__pag-num--active">2</div>
-        <div class="newest__pag-num num-2">3</div>
-        <div class="pag-dots">...</div>
-        <div class="newest__pag-num num-last">124</div>
-
-        <button class="newest__pag-btn pag-btn-r">
-            <svg
-                class="newest__arr-pag-left"
-                width="13"
-                height="20"
-                viewBox="0 0 13 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M4.35665 9.96491C4.44477 9.89837 4.53919 9.83753 4.62008 9.76446C7.26811 7.37271 9.91423 4.97923 12.5626 2.5878C12.8543 2.32445 13.0125 2.02 12.9736 1.64251C12.9482 1.39596 12.8392 1.18166 12.6503 1.00482C12.4003 0.770754 12.1534 0.532555 11.8863 0.315178C11.3385 -0.13049 10.6625 -0.0998701 10.1266 0.383856C8.6762 1.69289 7.22723 3.00319 5.77781 4.31309C3.99233 5.92669 2.20809 7.5414 0.42049 9.15307C0.112056 9.43115 -0.0420923 9.7529 0.00996304 10.149C0.0475922 10.4353 0.213796 10.656 0.433191 10.854C1.82617 12.111 3.21758 13.3695 4.60953 14.6275C6.44628 16.2875 8.28347 17.9471 10.1193 19.608C10.3612 19.8268 10.6367 19.979 10.9866 19.9977C11.3028 20.0147 11.5925 19.9368 11.8232 19.7436C12.1325 19.4846 12.4401 19.2205 12.716 18.933C13.0992 18.5336 13.096 17.9397 12.6981 17.5506C12.2163 17.0794 11.7037 16.6338 11.2015 16.1797C8.97197 14.1637 6.74155 12.1485 4.51013 10.1342C4.4665 10.0948 4.40666 10.0701 4.35438 10.0385C4.35514 10.014 4.3559 9.98944 4.35665 9.96491Z"
-                    fill="white"
-                    fill-opacity="0.4"
-                />
-            </svg>
-        </button>
-    </div>
-</div>
+<!-- /The Best Movies Week -->
+        
 
         <footer class="footer container">
     <div class="footer__alpha">
@@ -354,6 +338,7 @@
 
     </div>
 </footer>
+
 
         <script src="js/app.min.js"></script>
     </body>
