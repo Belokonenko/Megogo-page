@@ -20,7 +20,6 @@
 
         <header class="header">
     <div class="header__container container">
-        
         <a class="header__link-wrap-logo" href="#" class="">
     <img
         class="header__img-log"
@@ -30,51 +29,50 @@
     />
 </a>
 
-        
-        <div class="header__btn-burger" hidden>
+
+        <nav class="nav">
+            <div class="header__btn-burger" hidden>
     <span class="span-burger"></span>
     <span class="span-burger"></span>
     <span class="span-burger"></span>
 </div>
 
-        
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a class="nav-link" href="./index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./patern.html" >STUDIOS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./patern.html" >CATEGORIES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./patern.html" >PARTNERS </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.html">CONTACT US</a>
-            </li>
-        </ul>
 
-        <div class="search">
-    <form class="search__form" action="" name="form-search">
-        <input
-            class="search__input"
-            type="search"
-            name="input-search"
-            required
-        />
-        <div class="fa fa-search">
-            
-        </div>
-    </form>
-    <ul class="search__list">
-    </ul>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./patern.html">STUDIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./patern.html">CATEGORIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./patern.html">PARTNERS </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="search" role="search">
+    <input
+        type="search"
+        class="search__input"
+        placeholder="Search..."
+        aria-label="Search"
+    />
     
-</div>
-
-        
-        <div class="soc">
+    <button class="search__btn">
+        <img src="./img/search.svg" alt="search" />
+    </button>
+    
+    <ul class="search__res-list">
+    </ul>
+</form>
+ <div class="soc">
     <span class="soc__share">Share social network:</span>
     <ul class="soc__list">
         <li class="soc__link">
@@ -116,7 +114,6 @@
     </ul>
 </div>
 
-    
     </div>
 </header>
 
@@ -146,9 +143,24 @@
                         <p class="desc__resolution-pix">p</p>
                     </div>
 
-                    <div class="desc__rating">
-                        <p class="desc__rating-num">5.5</p>
-                    </div>
+                    <div class="rating rating_set">
+    <div class="desc__rating">
+        <p class="desc__rating-num rating__value">0</p>
+    </div>
+
+    <div class="rating__body">
+        <div class="rating__active"></div>
+        <div class="rating__items">
+            <input type="radio" class="rating__item" value="1" name="rating" />
+            <input type="radio" class="rating__item" value="2" name="rating" />
+            <input type="radio" class="rating__item" value="3" name="rating" />
+            <input type="radio" class="rating__item" value="4" name="rating" />
+            <input type="radio" class="rating__item" value="5" name="rating" />
+        </div>
+    </div>
+    <!-- <div class="rating__value">0</div> -->
+</div>
+
                 </div>
 
                 <p class="desc__top-week">The Best Movies Week</p>
@@ -180,7 +192,7 @@
 
             <section class="parts" hidden>
                 <button class="parts__close">
-                    <img src="../../img/cross-y.svg" alt="" />
+                    <img src="./img/cross-y.svg" alt="" />
                 </button>
                 <ul class="parts__list">
                     <li class="parts__item">Part 1</li>
@@ -285,10 +297,10 @@
     </div>
     <div class="footer__beta">
         <div class="footer__menu">MENU</div>
-        <ul class="footer__ref" >
-            <li><a href="#">STUDIOS</a></li>
-            <li><a href="#">CATEGORIES</a></li>
-            <li><a href="#">DMCA INFO</a></li>
+        <ul class="footer__ref">
+            <li><a class="footer__a" href="patern.html">STUDIOS</a></li>
+            <li><a class="footer__a" href="patern.html">CATEGORIES</a></li>
+            <li><a class="footer__a" href="patern.html">DMCA INFO</a></li>
         </ul>
         <div class="soc">
     <span class="soc__share">Share social network:</span>
