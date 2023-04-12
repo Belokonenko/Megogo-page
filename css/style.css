@@ -441,9 +441,9 @@ ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .slider__item {
@@ -492,6 +492,12 @@ ul {
   width: 55px;
   height: 55px;
 }
+.slider__btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slider__btn:hover svg path {
+  fill: #E4D804;
+}
 
 .btn-prev {
   left: 5%;
@@ -502,7 +508,7 @@ ul {
 }
 
 .svg-arr {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .svg-arr-next {
@@ -537,9 +543,9 @@ ul {
   width: 10px;
   background-color: #ffffff;
   border-radius: 50%;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .dot--active {
   height: 15px;
@@ -964,6 +970,9 @@ ul {
   outline: none;
   width: 210px;
   height: 100%;
+}
+.rec__btn:hover svg path {
+  fill: #E4D804;
 }
 
 .prev {
@@ -2794,14 +2803,16 @@ input:-webkit-autofill {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.dropdown:hover .arr-partner path {
-  fill: #e4d804;
-}
 .dropdown:hover {
   background: #161616;
   -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
+}
+.dropdown:hover .dropdown-content {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .wrap-munu-btn {
@@ -2815,6 +2826,9 @@ input:-webkit-autofill {
       -ms-flex-align: center;
           align-items: center;
   color: #e4d804;
+}
+.wrap-munu-btn:hover .arr-partner path {
+  fill: #e4d804;
 }
 
 .menu-btn {
@@ -2846,9 +2860,9 @@ input:-webkit-autofill {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -2859,10 +2873,4 @@ input:-webkit-autofill {
   padding: 10px 10px;
   text-decoration: none;
   color: #fff;
-}
-
-.dropdown:hover .dropdown-content {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
 }
